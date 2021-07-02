@@ -1,0 +1,45 @@
+:root{
+    --card-bg-col : #00ffff;
+    --body-bg-color : rgb(245, 238, 238);
+    --txt-color : black;
+}
+
+/* Variable declared in below body class are for dark theme */
+/* Once this theme is applied to body it will override root element variable value */
+
+.darktheme{
+   
+    --card-bg-col : #3f11e2;
+    --body-bg-color : rgb(51, 48, 53);
+    --txt-color : white;
+}
+
+body{
+    text-align: center;
+    margin: 5%;
+    padding: 0;
+
+    background-color: var(--body-bg-color);
+    color: var(--txt-color);
+    transition:all .7s;
+    
+}
+
+.custom-row{
+   
+   text-align: center;
+  
+}
+
+
+.container1, .container2{
+    background-color: var(--card-bg-col);
+    margin: 10%;
+    padding: 5%;
+    box-sizing: border-box;
+
+}
+
+.button-container{
+    text-align: center;
+}
