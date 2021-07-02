@@ -27,27 +27,71 @@
 
         <div class="row">
 
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="container1">
-                    <h2>Box 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae unde eos suscipit eum error in
-                        molestiae
-                        laborum voluptas minus, quia labore mollitia. Odio architecto repudiandae minus dicta quae,
-                        sequi
-                        quis!
-                    </p>
+               <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="container1">
+                        <h2>Box 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae unde eos suscipit eum error in
+                            molestiae
+                            laborum voluptas minus, quia labore mollitia. Odio architecto repudiandae minus dicta quae,
+                            sequi
+                            quis!
+                        </p>
+                    </div>
                 </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="container1">
+                        <h2>Box 2</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem natus beatae itaque maxime
+                            dignissimos!
+                            Minus sint explicabo ab maiores voluptatibus dolorum dolores repellat modi architecto aliquid
+                            nobis
+                            quos, necessitatibus nam?</p>
+                    </div>
+                </div>
+
+
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="container1">
-                    <h2>Box 2</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem natus beatae itaque maxime
-                        dignissimos!
-                        Minus sint explicabo ab maiores voluptatibus dolorum dolores repellat modi architecto aliquid
-                        nobis
-                        quos, necessitatibus nam?</p>
+             <div class="row">
+                <div class="col-lg-12">
+                    <div class="button-container">
+                    <button class="btn-primary btn-lg" onclick="changeTheme()">Click me to Change theme</button>
+
+                     <button class="btn-dark btn-lg" id="btn1">Click me </button>       
+                 </div>
+                </div>
                 </div>
             </div>
 
 
-        </div>
+        </section>
+
+
+    </body>
+
+    <script>
+
+
+
+        function changeTheme(){
+
+            //Toggle will add the mentioned class to the body element
+            document.body.classList.toggle("darktheme");
+
+        }
+    </script>
+
+    <script>
+
+
+    //Another way of adding elent listner
+        var ele=document.getElementById("btn1");
+        ele.addEventListener("click",function() {
+             document.body.classList.toggle("darktheme");
+             console.log("This is the element : "+ele);
+        })
+
+
+
+    </script>
+
+</html>
